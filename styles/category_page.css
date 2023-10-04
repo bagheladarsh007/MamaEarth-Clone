@@ -120,7 +120,7 @@ header and footer css */
 .header {
   position: sticky;
   top: 0;
-  z-index: 5;
+  z-index: 500;
   background-color: white;
 }
 
