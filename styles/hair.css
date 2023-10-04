@@ -393,6 +393,296 @@ body {
   display: flex;
 }
 
+   /* ____________________LOGIN POPUP______________________________________________ */
+   .login_full{
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.login_full:hover .login_dropdown{
+    display: flex;
+    flex-direction: column;
+}
+
+.login_dropdown{
+    z-index: 199;
+    /* visibility: hidden; */
+    transition: all 0.2s ease 0s;
+    cursor: default;
+    content: "";
+    position: absolute;
+    top: calc((100% + 1rem) - 16px);
+    right: 50%;
+    min-width: 150px;
+    /* height: fit-content; */
+    background: 0% 0% no-repeat padding-box padding-box rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 8px 16px;
+    padding: 0px;
+    border-top: 2px solid rgb(0, 175, 239);
+    transform: translateX(50%);
+    display: none;
+}
+
+/* .cBSNPD::before { */
+.login_dropdown::before{
+    content: "";
+    position: absolute;
+    top: calc(-7px);
+    left: 50%;
+    width: 12px;
+    height: 10px;
+    transform: translateX(-50%) rotate(45deg) skew(12deg, 12deg);
+    background-color: rgb(255, 255, 255);
+    border-top: 2px solid rgb(0, 175, 239);
+    border-left: 2px solid rgb(0, 175, 239);
+}
+.login_dropdown_list{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* height: auto; */
+}
+.login_dropdown_list_item{
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 1rem;
+    justify-content: flex-start;
+    /* padding-right: auto; */
+    gap: 8px;
+    height: fit-content;
+    margin: 6px 0;
+    border-bottom: 1px solid rgb(234, 234, 234);;
+}
+.login_dropdown_list_item p , .login_dropdown_list_item a{
+    margin: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    /* line-height: 1.2em; */
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.something-new-container{
+    cursor: pointer;
+    color: rgb(138, 140, 139);
+    font-size: 12px;
+}
+.login_dropdown_button_box{
+    width: 280px;
+    min-height: max-content;
+    padding: 10px;
+    /* padding: 10px; */
+}
+.login_dropdown_button_box button{
+   
+        /* padding: 10px auto; */
+        /* margin: 6px; */
+        cursor: pointer;
+        width: 100%;
+        padding: 8px 0 8px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1rem;
+        font-weight: 600;
+        /* line-height: 1.4; */
+        /* text-transform: uppercase; */
+        color: rgb(255, 255, 255);
+        text-align: center;
+        background-color: rgb(0, 175, 239);
+        border-radius: 5px;
+        border: 1px solid rgb(234, 234, 234);
+}
+.required:after {
+    content:" *";
+    color: red;
+}
+/* _________popup_________ */
+
+
+button { cursor: pointer; }
+/* ________________ */
+
+.login_popup_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.login_popup{
+    width: 28vw;
+    padding: 16px 24px 24px 24px;
+    border: 1px solid #e4e4e4;
+    border-radius: 15px;
+    background-color: white;
+}
+.popup_content{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 12px;
+}
+.popup_content .cross{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+.content-icon{
+    margin-top: -40px;
+    /* position: absolute; */
+    display: block;
+}
+.popup_content p{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    max-width: 280px;
+    line-height: 30px;
+    text-align: center;
+    padding: 12px 0 12px 0;
+}
+.popup_content> p span{
+    font-size: 39px;
+    color: rgb(0, 175, 239);
+}
+.login_intro, .login_message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    width: 100%;
+}
+.login_message{
+    padding: 24px 0 20px 0;
+    /* align-items: center; */
+    /* width: 100%; */
+
+}
+.login_message p{
+    letter-spacing: 0.8px;
+    font-size: 12.5px;
+    font-weight: 400;
+    /* padding: 1rem auto; */
+    line-height: 16px;
+    /* width: 280px; */
+    /* text-align: center; */
+}
+.login_intro p span{
+    color: rgb(0, 175, 239);
+    font-weight: 600;
+    text-align: left;
+}
+.login_intro input{
+    width: 100%;
+    height: 3rem;
+    border-width: 2px;
+    border-radius: 3px;
+    border-style:solid;
+    border-color: rgb(0, 175, 239);
+    padding: 6px 8px ;
+    margin: 20px;
+}
+.login_intro input:focus
+{
+    border-color: red;
+}
+.btn1{
+        cursor: pointer;
+        margin-top: 12px;
+        letter-spacing: 0.5px;
+        word-spacing: 2px;
+        font-size: 16px;
+        width: 100%;
+        text-align: center;
+        color: white;
+        background-color: rgb(0, 174, 239);
+        border: 1px solid rgb(0, 175, 239);
+        border-radius: 5px;
+        padding: 0.6rem 0rem;
+        font-weight: 600;
+   
+}
+.btn2{
+    cursor: pointer;
+    margin: 22px 0 22px 0;
+    text-align: center;
+    border: none;
+    color: rgb(0, 174, 239);
+    font-size: 16px;
+    font-weight: 600;
+    /* margin-top: 1rem; */
+}
+
+  
+  /* Dropdown CSS starts here */
+  
+  .dropdown_box {
+    display: flex;
+    gap: 12px;
+    transform: translateX(-22%);
+    align-items: flex-start;
+    background: 0% 0% no-repeat padding-box padding-box rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 8px 16px 0;
+    border-top: 3px solid rgb(0, 175, 239);
+    z-index: 99;
+    position: absolute;
+    padding: 1.25rem 1.5rem;
+    margin-top: 6px;
+    display: none;
+  }
+  .dropdown_box > a {
+    text-decoration: none;
+    color: rgb(0, 175, 239);
+    font-size: 0.9rem;
+    font-weight: 500;
+    line-height: 1.4em;
+    border-left: 2px solid rgb(234, 234, 234);
+    padding-left: 1.25rem;
+  }
+  .dropdown_box_list:not(:first-child) {
+    border-left: 2px solid rgb(234, 234, 234);
+    padding-left: 1.25rem;
+  }
+  
+  .dropdown_box_list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 2rem;
+    gap: 1rem;
+  }
+  .dropdown_box_list h2,
+  .dropdown_box_list h2 a {
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+    line-height: 1.4em !important;
+    color: rgb(29, 29, 29) !important;
+    text-decoration: none;
+  }
+  .dropdown_box_list ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .dropdown_box_list li a {
+    margin-top: 1rem;
+    color: rgb(152, 152, 152);
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+  }
+  .dropdown_box_list li a:hover {
+    color: rgb(92, 92, 92);
+  }
+  
+  .some-change:hover .dropdown_box {
+    display: flex;
+  }
 /* ---------------------Banner of the Page---------------- */
 .page_banner img {
   width: 100%;
