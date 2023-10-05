@@ -1,11 +1,7 @@
 *{padding: 0; margin: 0; box-sizing: border-box;
 font-family: "Open Sans",sans-serif;}
 
-@media screen and (min-width: 1200px) {
-    .outer_main_container{
-        padding: 0 8vw;
-    } 
-}
+
 
 .main_container{
     display: flex;
@@ -29,7 +25,6 @@ font-family: "Open Sans",sans-serif;}
     /* margin-right: 10px; */
     max-height: 29rem;
     margin-right: 1rem;
-
 }
 .container_right{
     display: flex;
@@ -38,13 +33,37 @@ font-family: "Open Sans",sans-serif;}
 }
 .map_container{
 height: 100%;
-
 }
-
 .w3-bar{
     display: flex;
     align-self: flex-start;
 }
+.w3-bar button:hover{
+    font-size: 14px;
+    /* white-space: pre; */
+    width: auto;
+    font-weight: 500;
+    border-bottom: 2px solid rgb(0, 174, 239);
+    color: rgb(0, 174, 239);
+}
+.tab-button.active {
+    border-bottom: 1px solid rgb(0, 174, 239);
+    color: rgb(0, 174, 239);
+}
+.w3-bar button {
+    font-size: 14px;
+    white-space: pre;
+    width: auto;
+    color: rgb(154, 154, 154);
+    border-style: none;
+    padding: 4px;
+    margin-right: 4px;
+    
+}
+
+.tab-button {
+    background-color: transparent;}
+
 .city{
     overflow: scroll;
     /* height: 100%; */
@@ -60,7 +79,6 @@ height: 100%;
     margin: 0 0rem 1rem 0rem;
     border-bottom: 1px solid rgb(186, 186, 186);
     padding-bottom: 6px;
-
 }
 .city_location_box:hover{
     background-color: #EDF7FE;
@@ -114,12 +132,17 @@ height: 100%;
 }
 
 /* _____________________media queries____________ */
+@media screen and (min-width: 1200px) {
+    .outer_main_container{
+        padding: 0 8vw;
+    } 
+}
 @media screen and (max-width: 1023px) {
     .hamburger_icon{
         display: flex;
         margin-right: 12px;
     }
-    .below-nav, .goodness_img, .iconlabel, .login-label{
+    .below-nav, .goodness_img, .iconlabel, .login .login-label{
         display: none;
     }
     .login {
@@ -197,5 +220,6 @@ height: 100%;
     .city_location_box{
         width: 80vw;
     }
+}
 
 /* _______________________FOOTER__________________________ */

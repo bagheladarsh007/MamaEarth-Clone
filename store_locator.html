@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Contact Details of Hyper-Local Mamaearth Stores in Select Cities</title>
-        <link rel="shortcut icon" href="mama-Favicon-2-150x150.webp">
+        <link rel="shortcut icon" href="https://images.mamaearth.in/wysiwyg/cropped-Favicon-2-150x150.png">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/store_locator.css">
@@ -720,16 +720,15 @@
         </script>
 <!-- ______________________to here____________________________ -->
        
-
         <!-- __________ -->
         <div class="outer_main_container">
             <div class="main_container">
                 <div class="container_left">
                     <h3>Mamaearth Eclusive Store</h3>
-                    <div class="w3-bar w3-black">
-                        <button class="tabbar-item tab-button" onclick="openCity('delhi')">New Delhi</button>
-                        <button class="tabbar-item tab-button" onclick="openCity('mum')">Mumbai</button>
-                        <button class="tabbar-item tab-button" onclick="openCity('bengaluru')">Bengaluru</button>
+                    <div id="d" class="w3-bar w3-black">
+                        <button  class="  tab-button active" onclick="openCity('delhi'); "  >New Delhi</button>
+                        <button  class=" tab-button  " onclick="openCity('mum'); "  >Mumbai</button>
+                        <button  class=" tab-button " onclick="openCity('bengaluru');"  >Bengaluru</button>
                     </div>
                       
                       <div id="delhi" class="w3-container city">
@@ -929,24 +928,28 @@
                                 
                         </div>
                       </div>
-                      <!-- Tab-switching JS -->
-                      <script>
-                          function openCity(cityName) {
-                              var i;
-                              var x = document.getElementsByClassName("city");
-                              for (i = 0; i < x.length; i++) {
-                                   x[i].style.display = "none";  
-                               }
-                            document.getElementById(cityName).style.display = "block";  
-                           }
-                      </script>
-                </div>
+                    </div>
+                   <!-- Tab-switching JS -->
+                   <script>
+                    function openCity(cityName) {
+                        var i;
+                        var x = document.getElementsByClassName("city");
+                        for (i = 0; i < x.length; i++) {
+                             x[i].style.display = "none";  
+                         }
+
+                      
+                      document.getElementById(cityName).style.display = "block"; 
+                      
+                     }
+
+                   </script> 
                 </div>
     
         <!-- __________________________________ MAP Embedded______________________ -->
                 <div class="container_right" >
                     
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d448329.4385431429!2d76.8388194!3d28.6125619!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd7a1b7bd9e1%3A0xc7107468ee2aba85!2sMamaearth%20Exclusive%20Store!5e0!3m2!1sen!2sin!4v1696297781630!5m2!1sen!2sin"
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d448329.4385431429!2d76.8388194!3d28.6125619!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd7a1b7bd9e1%3A0xc7107468ee2aba85!2sMamaearth%20Exclusive%20Store!5e0!3m2!1sen!2sin!4v1696297781630!5m2!1sen!2sin"
                           style="border:0; " 
                           width="750"
                           height="450"

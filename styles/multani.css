@@ -77,72 +77,92 @@
 .card_section{
     margin-bottom: .4rem;
 }
+.slick-prev:hover,
+  .slick-prev:focus {
+    color: transparent;
+    outline: none;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.38),
+      rgba(255, 255, 255, 0)
+    ) !important;
+  }
+  .slick-next:hover,
+  .slick-next:focus {
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.38),
+      rgba(255, 255, 255, 0)
+    ) !important;
+  }
 
-.slick-prev:before,
-.slick-next:before {
-  color: white;
-  background-color: transparent;
-  height: 4rem;
-  width: 4rem;
-  stroke: currentColor !important;
-}
-
-.slick-slider .slick-next {
-  font-size: 0px;
-  line-height: 0;
-  /* position: absolute; */
-  top: 50%;
-  /* display: block; */
-  width: 20px;
-  height: 20px;
-  padding: 0px;
-  transform: translate(0px, -50%);
-  cursor: pointer;
-  /* color: transparent; */
-  border: none;
-  /* outline: none; */
-  /* background: transparent; */
-  display: block;
+  .slick-slider .slick-next {
+    font-size: 0px;
+    line-height: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    transform: translate(0px, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    display: block;
+    /* position: absolute; */
+    /* left: auto; */
+    /* opacity: 0; */
+    right: 0px;
+    z-index: 4;
+    height: 100%;
+    width: 10vw;
+    background-image: linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0.38),
+      rgba(255, 255, 255, 0)
+    );
+  }
+  .slick-slider .slick-next:before{
+    position: absolute;
+  font-family: 'FontAwesome';
+  right: 3vw;
+  content: "\f054";
+  font-size: 32px;
+  margin-bottom: 40px;
+  }
+  .slick-slider .slick-prev:before{
+    
   position: absolute;
-  left: auto;
-  right: 0px;
-  z-index: 9;
-  height: 100%;
-  width: 10vw;
-  background-image: linear-gradient(
-    to left,
-    rgba(0, 0, 0, 0.38),
-    rgba(255, 255, 255, 0)
-  );
-}
-.slick-slider .slick-prev {
-  font-size: 0px;
-  line-height: 0;
-  /* position: absolute; */
-  top: 50%;
-  /* display: block; */
-  /* width: 20px; */
-  /* height: 20px; */
-  padding: 0px;
-  transform: translate(0px, -50%);
-  cursor: pointer;
-  /* color: transparent; */
-  border: none;
-  /* outline: none; */
-  /* background: transparent; */
-  display: block;
-  position: absolute;
-  right: auto;
-  left: 0px;
-  z-index: 9;
-  height: 100%;
-  width: 10vw;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.38),
-    rgba(255, 255, 255, 0)
-  );
-}
+  font-family: 'FontAwesome';
+  left: 3vw;
+  content: "\f053";
+  font-size: 32px;
+  margin-bottom: 40px;
+  }
+  .slick-slider .slick-prev {
+    font-size: 0px;
+    line-height: 0;
+    width: 20px;
+    height: 20px;
+    padding: 0px;
+    transform: translate(0px, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    display: block;
+    /* outline: none; */
+    /* background: transparent; */
+    display: block;
+    position: absolute;
+    right: auto;
+    left: 0px;
+    z-index: 4;
+    height: 100%;
+    width: 10vw;
+    background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.38),
+      rgba(255, 255, 255, 0)
+    );
+  }
 
 .slick-slider .slick-next .slick-arrow {
   top: 50%;

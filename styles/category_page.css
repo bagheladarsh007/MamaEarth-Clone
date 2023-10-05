@@ -408,6 +408,7 @@ header and footer css */
 .upper_footer {
   margin: 1rem 7rem 1.5rem 7rem;
   border: 1px solid rgb(230, 230, 230);
+  background: white;
 }
 .container2 {
   display: flex;
@@ -416,7 +417,7 @@ header and footer css */
 
 .service-feature1 {
   display: flex;
-  width: 50%;
+  width: fit-content;
 }
 
 .feature-left1 {
@@ -424,7 +425,7 @@ header and footer css */
   flex-direction: column;
   -webkit-box-pack: center;
   justify-content: center;
-  padding: 1rem 3.5rem;
+  padding: 1rem 3.5vw;
   text-align: center;
   border-right: 1px solid rgb(234, 234, 234);
   -webkit-box-align: center;
@@ -450,7 +451,7 @@ header and footer css */
   flex-direction: column;
   -webkit-box-pack: center;
   justify-content: center;
-  padding: 1rem 3.5rem;
+  padding: 1rem 4.5vw;
   text-align: center;
 
   -webkit-box-align: center;
@@ -461,7 +462,7 @@ header and footer css */
 .contact {
   color: rgb(0, 175, 239);
   font-size: 1.1rem;
-  padding: 0.5rem 3rem;
+  padding: 0.5rem 3vw;
   text-transform: uppercase;
   font-weight: 600;
   border-radius: 5px;
@@ -663,8 +664,8 @@ header and footer css */
 }
 
 .img-photo img {
-  height: 255px;
-  width: 150px;
+  height: 33vh;
+  /* width: 150px; */
 }
 
 .lower_footer {
