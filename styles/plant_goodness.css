@@ -8,7 +8,7 @@ body{
 
 /* Header__________________ */
 .top_banner{
-    background: url("/assets/plant_assets/michail-dementiev-E0LpPXeHGAM-unsplash.jpg") no-repeat;
+    background: url("../assets/plant_assets/michail-dementiev-E0LpPXeHGAM-unsplash.jpg") no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
