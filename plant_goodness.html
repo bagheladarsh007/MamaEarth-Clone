@@ -1,52 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Multani Mitti Range</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+      Buy Mamaearth's Natural & Toxin Free Skin Care Products Online. Only Toxin
+      Free Madesafe Certified Brand In India. Visit Now!. Free Shipping.
+    </title>
     <link
       rel="shortcut icon"
       href="https://images.mamaearth.in/wysiwyg/cropped-Favicon-2-150x150.png"
     />
-    <link rel="stylesheet" href="styles/product.css" />
-    <link rel="stylesheet" href="styles/multani.css" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles/plant_goodness.css" />
+    <link rel="stylesheet" href="styles/popups.css" />
     <link rel="stylesheet" href="styles/category_page.css" />
-    <!-- slick CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    <!-- _____________________________________________________________ -->
+    <script
+      src="https://kit.fontawesome.com/9b697ab43f.js"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"
-      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    ></script>
   </head>
-  <body style="height: 100%">
-    <!-- Mamaearth links above Navbar -->
-    <div class="Upper_links">
-      <a href="#">Asia's 1st Brand with MADE SAFE Certified Products</a>
-      <a href="#"
-        >Get Upto 25% Off On Orders Above Rs. 599 | Use Code: SAVE25 | SHOP
-        NOW</a
-      >
-      <a href="#"
-        ><img
-          loading="lazy"
-          src="https://images.mamaearth.in/svg/user-header-white.svg"
-          alt="user-header-white"
-          style="height: 16px; width: 16px"
-      /></a>
-    </div>
-    <!-- navbar -->
+  <body>
+    <!-- ____________Navbar_ copy from-here ______________________ -->
     <div class="header">
       <div class="upper-nav">
+        <div class="hamburger_icon" style="display: none">
+          <i class="fa-solid fa-bars" style="color: #00afef"></i>
+        </div>
         <div class="logo">
           <svg
             width="120"
@@ -135,7 +118,7 @@
           />
         </a>
 
-        <div class="cart_login">
+        <div class="cart_login" style="cursor: pointer">
           <div class="cart">
             <svg
               xmlns="http://www.w3.org/2000/svg."
@@ -161,31 +144,143 @@
             <div class="iconlabel">Cart</div>
           </div>
 
-          <div class="login">
-            <svg width="14.514" height="17.355" viewBox="0 0 14.514 17.355">
-              <defs>
-                <style>
-                  .user_account {
-                    stroke: currentcolor;
-                  }
-                </style>
-              </defs>
-              <path
-                d="M7.257 8.222A3.861 3.861 0 103.4 4.361a3.861 3.861 0 003.857 3.861zM9.96 10.1h-.5a5.251 5.251 0 01-4.4 0h-.5A4.055 4.055 0 00.5 14.152v1.255a1.448 1.448 0 001.448 1.448h10.618a1.448 1.448 0 001.448-1.448v-1.255A4.055 4.055 0 009.96 10.1z"
-                fill="none"
-                class="user_account path-selector"
-              ></path>
-            </svg>
-            <div class="login-label">Login</div>
+          <div class="login_full">
+            <div class="login" onclick="openForm()">
+              <svg width="14.514" height="17.355" viewBox="0 0 14.514 17.355">
+                <defs>
+                  <style>
+                    .user_account {
+                      stroke: currentcolor;
+                    }
+                  </style>
+                </defs>
+                <path
+                  d="M7.257 8.222A3.861 3.861 0 103.4 4.361a3.861 3.861 0 003.857 3.861zM9.96 10.1h-.5a5.251 5.251 0 01-4.4 0h-.5A4.055 4.055 0 00.5 14.152v1.255a1.448 1.448 0 001.448 1.448h10.618a1.448 1.448 0 001.448-1.448v-1.255A4.055 4.055 0 009.96 10.1z"
+                  fill="none"
+                  class="user_account path-selector"
+                ></path>
+              </svg>
+              <div class="login-label">Login</div>
+            </div>
+
+            <div class="square"></div>
+            <div class="login_dropdown">
+              <div class="login_dropdown_list">
+                <!--  -->
+                <div
+                  class="login_dropdown_list_item"
+                  style="cursor: pointer; width: 100%"
+                >
+                  <i class="manage-ac-icon"
+                    ><img
+                      src="https://images.mamaearth.in/svg/userIcon.svg"
+                      height="24px"
+                      width="24px"
+                  /></i>
+                  <p class="SubText-sc-8mwtwz-0 ieXHku">Your Profile</p>
+                  <div class="preview-content"></div>
+                </div>
+                <!--  -->
+
+                <div style="width: 100%">
+                  <div class="login_dropdown_list_item" style="cursor: pointer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      id="shopping_cart_black_24dp"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      data-locator-target="vscode"
+                    >
+                      <path
+                        id="Path_17357"
+                        data-name="Path 17357"
+                        d="M0,0H24V24H0Z"
+                        fill="none"
+                      ></path>
+                      <path
+                        id="Path_17358"
+                        data-name="Path 17358"
+                        d="M15.55,13a1.991,1.991,0,0,0,1.75-1.03l3.58-6.49A1,1,0,0,0,20.01,4H5.21L4.27,2H1V4H3l3.6,7.59L5.25,14.03A2,2,0,0,0,7,17H19V15H7l1.1-2ZM6.16,6H18.31l-2.76,5H8.53ZM7,18a2,2,0,1,0,2,2A2,2,0,0,0,7,18Zm10,0a2,2,0,1,0,2,2A2,2,0,0,0,17,18Z"
+                        fill="#00AFEF"
+                      ></path>
+                    </svg>
+
+                    <p class="SubText-sc-8mwtwz-0 ieXHku">Your Orders</p>
+                    <div class="preview-content"></div>
+                  </div>
+                </div>
+                <!--  -->
+                <div style="width: 100%">
+                  <div class="login_dropdown_list_item" style="cursor: pointer">
+                    <img
+                      src="https://images.mamaearth.in/svg/goodnessInsiderExpiryItem.svg"
+                      id="tabler-icon-leaf"
+                    />
+                    <a href="/goodness-insider">
+                      <div>
+                        <div>
+                          <img
+                            src="https://images.mamaearth.in/svg/goodnessInsiderLogo.svg"
+                          />
+                        </div>
+                        <div class="something-new-container">
+                          Something New For You
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <!-- <div class="DesktopAccountDropdown__NavItemSeparator-sc-b668kv-1 fTpadF"></div> -->
+                </div>
+                <!---->
+                <div style="width: 100%">
+                  <div class="login_dropdown_list_item" style="cursor: pointer">
+                    <i class="manage-ac-icon">
+                      <img
+                        src="https://images.mamaearth.in/svg/pinIcon.svg"
+                        height="24px"
+                        width="24px"
+                    /></i>
+                    <p class="SubText-sc-8mwtwz-0 ieXHku">Manage Address</p>
+                    <div class="preview-content"></div>
+                  </div>
+                  <!-- <div class="DesktopAccountDropdown__NavItemSeparator-sc-b668kv-1 fTpadF"></div> -->
+                </div>
+                <!--  -->
+                <div style="width: 100%">
+                  <div class="login_dropdown_list_item" style="cursor: pointer">
+                    <i class="manage-ac-icon">
+                      <img
+                        src="https://images.mamaearth.in/svg/callIcon.svg"
+                        height="24px"
+                        width="24px"
+                      />
+                    </i>
+                    <a href="/contact-us">
+                      <p class="SubText-sc-8mwtwz-0 ieXHku">Contact Us</p>
+                    </a>
+                    <div class="preview-content"></div>
+                  </div>
+                  <!-- <div class="DesktopAccountDropdown__NavItemSeparator-sc-b668kv-1 fTpadF"></div> -->
+                </div>
+                <!--  -->
+              </div>
+              <!-- ____________________ -->
+              <div class="login_dropdown_button_box">
+                <button class="login_dropdown_button" onclick="openForm()">
+                  LOGIN
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
 
       <div class="below-nav">
         <ul>
-          <li class="some-change"><a href="index.html">HOME</a></li>
+          <li class="some-change"><a href="index.html"></a>HOME</li>
           <li class="some-change">
-            <a href="beauty.html">BEAUTY</a>
+            <a href="#">BEAUTY</a>
             <div class="dropdown_box">
               <div class="dropdown_box_list">
                 <h2>Explore</h2>
@@ -208,7 +303,7 @@
             </div>
           </li>
           <li class="some-change">
-            <a href="hair.html">HAIR</a>
+            <a href="#">HAIR</a>
             <div class="dropdown_box">
               <div class="dropdown_box_list">
                 <h2>Explore</h2>
@@ -234,7 +329,7 @@
             </div>
           </li>
           <li class="some-change">
-            <a href="face.html">FACE</a>
+            <a href="#" class="active_page">FACE</a>
             <div class="dropdown_box">
               <div class="dropdown_box_list">
                 <h2>Explore</h2>
@@ -263,7 +358,7 @@
             </div>
           </li>
           <li class="some-change">
-            <a href="Body.html">BODY</a>
+            <a href="#">BODY</a>
             <div class="dropdown_box">
               <div class="dropdown_box_list">
                 <h2>Explore</h2>
@@ -289,7 +384,7 @@
             </div>
           </li>
           <li class="some-change">
-            <a href="Makeup.html">MAKEUP</a>
+            <a href="#">MAKEUP</a>
             <div class="dropdown_box">
               <div class="dropdown_box_list">
                 <h2>Explore</h2>
@@ -316,7 +411,7 @@
             </div>
           </li>
           <li class="some-change">
-            <a href="Ingredient.html">INGREDIENT</a>
+            <a href="#">INGREDIENT</a>
             <div class="dropdown_box">
               <div class="dropdown_box_list">
                 <h2>Explore</h2>
@@ -351,7 +446,7 @@
             </div>
           </li>
           <li class="some-change">
-            <a href="Baby.html">BABY</a>
+            <a href="#">BABY</a>
             <div class="dropdown_box">
               <div class="dropdown_box_list">
                 <h2>Explore</h2>
@@ -377,7 +472,7 @@
             </div>
           </li>
           <li class="some-change">
-            <a href="giftPacks.html">GIFT PACKS</a>
+            <a href="#">GIFT PACKS</a>
             <div class="dropdown_box">
               <div class="dropdown_box_list">
                 <h2>Explore</h2>
@@ -392,7 +487,7 @@
             </div>
           </li>
           <li class="some-change">
-            <a href="product.html">ALL PRODUCTS</a>
+            <a href="#">ALL PRODUCTS</a>
           </li>
           <li class="some-change"><a href="#">BLOG</a></li>
           <li class="some-change">
@@ -404,217 +499,238 @@
         </ul>
       </div>
     </div>
+    <!-- _____________Login popup_________________________ -->
+    <div
+      class="login_popup_container"
+      id="login-pop"
+      style="
+        height: 100vh;
+        z-index: 999;
+        top: 0;
+        position: fixed;
+        display: none;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(1px);
+        transition: 0.5s ease-in-out;
+      "
+    >
+      <div class="login_popup">
+        <div class="popup_content">
+          <div class="content-icon">
+            <i
+              class="fa-solid fa-circle-user"
+              style="color: rgb(0, 175, 239); font-size: 6rem"
+            ></i>
+          </div>
 
-    <!-- landingpage -->
-    <div class="page_banner">
-      <a href="multanimitti.html">
-        <img
-          src="https://images.mamaearth.in/wysiwyg/4-8-2023/desktop%20copy%202.jpg"
-          alt="main-image"
-        />
-      </a>
-    </div>
+          <i
+            class="cross fa-solid fa-xmark"
+            style="cursor: pointer; color: rgb(138, 140, 139)"
+            onclick="closeForm()"
+          >
+          </i>
 
-    <!-- mitti -->
+          <p>Login to Get <span>Started!</span></p>
+          <div class="login_intro">
+            <h4>
+              Get access to your orders, track previous order & Redeem Mama Cash
+            </h4>
+            <input
+              type="tel"
+              name="phno"
+              placeholder="Phone Number"
+              maxlength="10"
+              required
+            />
 
-    <div class="outer_div">
-      <div class="inner_div">
-        <div></div>
-        <div class="range_div">
-          <div class="range_text">Multani Mitti Range</div>
+            <div class="login_message">
+              <p style="margin-left: 0">
+                By Continuing, you agree to Mamaearth's
+                <span> Terms and Conditions </span> and
+                <span>Privacy Policy</span>.
+              </p>
+              <button class="btn1" onclick="closeForm()">LOGIN WITH OTP</button>
+              <button class="btn2" onclick="closeForm()">
+                CONTINUE AS GUEST
+              </button>
+            </div>
+          </div>
         </div>
-        <section class="card_section">
-          <a href="#">
-            <div class="card">
-              <div class="bestseller">BESTSELLER</div>
-              <img
-                src="https://images.mamaearth.in/catalog/product/m/u/multani_mitti_face_pack_1.jpg?fit=contain&height=382"
-              />
-              <div class="card_product_info">
-                <span class="card_product_name"
-                  >Multani Mitti Face Pack Multani Mitti and Bulgarian Rose for
-                  Oil Control & Acne - 100 g
-                </span>
-                <span class="card_product_subtitle"
-                  >Prevents Acne | Controls Excess Oil</span
-                >
-                <div class="rating-and-reviews">
-                  <span class="rating-star">★</span>
-                  <span class="product-rating">&nbsp;5.0&nbsp;</span>
-                  <span class="review-count"
-                    ><div class="review-count-div">
-                      <div class="box"><div class="box-inside"></div></div>
-                    </div>
-                    &nbsp; 66 Reviews</span
-                  >
-                </div>
-                <div class="price_tag">
-                  <div class="price">₹349</div>
-                </div>
-              </div>
-              <button>ADD TO CART</button>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card">
-              <div class="bestseller">BEST SELLER</div>
-              <img
-                src="https://images.mamaearth.in/catalog/product/m/u/multani_mitti_face_wash_1.jpg?fit=contain&height=382"
-              />
-              <div class="card_product_info">
-                <span class="card_product_name"
-                  >Multani Mitti Face Wash with Multani Mitti & Bulgarian Rose
-                  For Oil Control & Acne - 100 ml</span
-                >
-                <span class="card_product_subtitle"
-                  >Controls Oil & Acne | Promotes Hydrationt</span
-                >
-                <div class="rating-and-reviews">
-                  <span class="rating-star">★</span>
-                  <span class="product-rating">&nbsp;5.0&nbsp;</span>
-                  <span class="review-count"
-                    ><div class="review-count-div">
-                      <div class="box"><div class="box-inside"></div></div>
-                    </div>
-                    &nbsp; 131 Reviews</span
-                  >
-                </div>
-                <div class="price_tag">
-                  <div class="price">₹259</div>
-                </div>
-              </div>
-              <button>ADD TO CART</button>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card">
-              <div class="newlaunch">BESTSELLER | NEW LAUNCH</div>
-              <img
-                src="https://images.mamaearth.in/catalog/product/l/i/listing-9.jpg?fit=contain&height=382"
-              />
-              <div class="card_product_info">
-                <span class="card_product_name"
-                  >Multani Mitti Acne Control Combo - 100ml + 100gm</span
-                >
-                <span class="card_product_subtitle"
-                  >Gently Cleanses | Prevents Acne</span
-                >
-                <div class="rating-and-reviews">
-                  <span class="rating-star">★</span>
-                  <span class="product-rating">&nbsp;5.0&nbsp;</span>
-                  <span class="review-count"
-                    ><div class="review-count-div">
-                      <div class="box"><div class="box-inside"></div></div>
-                    </div>
-                    &nbsp; 57 Reviews</span
-                  >
-                </div>
-                <div class="price_tag">
-                  <div class="price">₹589</div>
-                  <div class="slashed-price">₹608</div>
-                  <div class="discount">3% off</div>
-                </div>
-              </div>
-              <button>ADD TO CART</button>
-            </div>
-          </a>
-          <a href="#">
-            <div class="card">
-              <div class="bestseller">BEST SELLER</div>
-              <img src="./assets/product_images/4.avif" />
-              <div class="card_product_info">
-                <span class="card_product_name"
-                  >Multani Mitti Face Wash with Multani Mitti & Bulgarian Rose
-                  For Oil Control & Acne - 100 ml - Pack of 2</span
-                >
-                <span class="card_product_subtitle"
-                  >Controls Oil & Acne | Promotes Hydration</span
-                >
-                <div class="rating-and-reviews">
-                  <span class="rating-star">★</span>
-                  <span class="product-rating">&nbsp;5.0&nbsp;</span>
-                  <span class="review-count"
-                    ><div class="review-count-div">
-                      <div class="box"><div class="box-inside"></div></div>
-                    </div>
-                    &nbsp; 37 Reviews</span
-                  >
-                </div>
-                <div class="price_tag">
-                  <div class="price">₹502</div>
-                  <!-- <div class="slashed-price">₹868</div>
-                        <div class="discount">3% off</div> -->
-                </div>
-              </div>
-              <button>ADD TO CART</button>
-            </div>
-          </a>
-        </section>
       </div>
     </div>
+    <!-- ______________ON-Click JS function_____________ -->
+    <script>
+      function openForm() {
+        document.getElementById("login-pop").style.display = "flex";
+      }
 
-    <!-- bottom slider -->
+      function closeForm() {
+        document.getElementById("login-pop").style.display = "none";
+      }
+    </script>
+    <!-- ______________________to here____________________________ -->
+
+    <!-- landing section -->
+    <section class="top_banner" style="color: white">
+      <div class="top_banner_left">
+        <p>
+          Every time you buy from us,<br />
+          <span>We plant more trees!</span>
+        </p>
+      </div>
+      <div class="top_banner_right">
+        <p>
+          Trees Planted<br />
+          <span>482463</span>
+        </p>
+      </div>
+    </section>
+    <!-- login section -->
+    <section class="login_sec">
+      <p class="login_para">
+        Hi Guest,<br />
+        Small good actions lead to big changes.<br />
+        Choose goodness by ordering from the mamaearth app or website <br />
+        and we will plant a tree for you.
+      </p>
+      <button class="login_btn">LOGIN</button>
+      <div class="watering_png">
+        <p>We plant trees & nurture them :)</p>
+        <img
+          src="/assets/plant_assets/vecteezy_hand-drawn-green-plant-and-blue-watering-can_8045087-removebg-preview.png"
+          alt="watering-illustration"
+        />
+      </div>
+    </section>
+
+    <section class="plant_parents">
+      <h1>Meet Our Plant Parents</h1>
+      <div class="plant_parents_people">
+        <div class="p1">
+          <div class="p1_img">
+            <img
+              class="plant_parent_img"
+              src="./assets/plant_assets/people/nonresident-dwJw6KB_MjA-unsplash.jpg"
+              alt=""
+            />
+          </div>
+          <h4>Divya Singh</h4>
+          <p>
+            24 Years, Mumbai<br />
+            A much needed initiative in the present times, just by taking a
+            small step this can bring about a big changes
+          </p>
+        </div>
+        <div class="p2">
+          <img
+            class="plant_parent_img"
+            src="./assets/plant_assets/people/man.png"
+            alt=""
+          />
+          <h4>Udit Narayan</h4>
+          <p>
+            22 Years, Bhopal<br />It is amazing how the one little step of
+            making a conscious decision to be more mindful in your daily life
+            can change the world.
+          </p>
+        </div>
+        <div class="p3">
+          <img
+            class="plant_parent_img"
+            src="/assets/plant_assets/people/photo-1478184096253-c2d96e9263c1.avif"
+            alt=""
+          />
+          <h4>Sulbha Mishra</h4>
+          <p>
+            32 Years, Indore<br />Thank you for initiating a much needed
+            programme which contributes back to our environment
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="goodness_banner">
+      <img src="/assets/plant_assets/Group 5.webp" alt="" />
+      <div class="plant_goodness_wrap">
+        <img src="/assets/plant_assets/plant-goodness.webp" alt="" />
+        <p>
+          Today, the world needs goodness and every small good action will go a
+          long way for our environment. That's why we plant trees for every
+          order we receive. Each tree is spreading goodness by making the air
+          cleaner, reducing carbon footprints, improving farmers' livelihoods,
+          and creating a greener environment for all of us.
+        </p>
+      </div>
+    </section>
+    <!--  -->
+    <section class="youtube_section">
+      <h3>Watch Our Film</h3>
+      <!-- YT video embed link -->
+      <iframe
+        width="853"
+        height="480"
+        src="https://www.youtube.com/embed/0u4VO0MPLiI?si=GHxRlzrjcnjsNe4M"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      <!-- YT video embed link -->
+      <p>
+        Our consumers were surprised to know that everytime time they order from
+        Mamaearth, we plant trees for them.
+      </p>
+    </section>
+
+    <section class="Plantation_partner">
+      <span>Our Plantation Partner</span>
+      <img
+        src="assets/plant_assets/sankalp taru logo.webp"
+        alt="partner_logo"
+      />
+      <p>
+        SankalpTaru Foundation is an IT-enabled NGO, spreading greenery with its
+        core philosophy of "planting trees for the people, by the people". Just
+        like Mamaearth, goodness stays in the cornerstone of what they do.
+        Making Mamaearth and SankalpTaru the perfect goodness partners. <br />
+        Having rooted and survived close to a million trees across 21 states of
+        India, they are constantly fighting back the detrimental demons of
+        pollution, and strengthening the livelihood of poor farmers to create a
+        rich biodiverse ecosystem by taking care of the trees until they become
+        self-sufficient.
+      </p>
+    </section>
+
+    <!-- ______________float chat______________ -->
     <div
-      class="bottom_slider_carousel"
+      class="customer_care_icon"
       style="
-        width: 100%;
+        background-color: #82c341 !important;
+        padding: 2px 2px;
+        filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.4));
+        box-shadow: none !important;
+        border: none;
         display: flex;
         align-items: center;
         justify-content: center;
+        border-radius: 50% !important;
+        box-sizing: border-box;
+        position: fixed;
+        user-select: none;
+        cursor: pointer;
+        z-index: 10;
+        bottom: 18px;
+        right: 18px;
       "
     >
-      <div
-        class="autoplay"
-        style="width: 90%; display: inline-block; position: relative"
-      >
-        <img
-          style="display: block; vertical-align: middle; border-style: none"
-          src="https://images.mamaearth.in/wysiwyg/sale%20day%202/Happy_Customers_Desktop.jpg"
-          alt=""
-        />
-
-        <img
-          style="display: block; vertical-align: middle; border-style: none"
-          src="https://images.mamaearth.in/wysiwyg/Desktop-_saf.png?auto=format"
-          alt=""
-        />
-
-        <img
-          style="display: block; vertical-align: middle; border-style: none"
-          src="https://images.mamaearth.in/wysiwyg/Customer-Ratings.jpg?auto=format"
-          alt=""
-        />
-      </div>
+      <img
+        src="https://mamaearthp.imgix.net/wysiwyg/ChatIcon12%20Jan.png.png"
+        alt="bubble-icon"
+        style="width: 60px; height: 60px"
+      />
     </div>
-
-    <!--Below is the script-->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
-      integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script>
-      $(".autoplay").slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: true,
-      });
-    </script>
-
-    <!-- load more button -->
-    <div id="load-more-container">
-      <a href="#">
-        <button id="load-more-button">VIEW ALL PRODUCTS</button>
-      </a>
-    </div>
-
-    <!-- Start of Upper Footer-->
-
+    <!-- FOOTER -->
     <div class="upper_footer">
       <div class="container2">
         <div class="service-feature1">
@@ -847,5 +963,6 @@
         </div>
       </div>
     </div>
+    <!--  -->
   </body>
 </html>
