@@ -9,12 +9,20 @@
 - Static web pages mimicking Mamaearth's layout and design.
 - Responsive design for various screen sizes.
 - Placeholder content and images.
-
+____
+## Contributors
+* Adarsh Baghel
+* Sushil Kulkarni
+* D.S Srivatsa
+* Himanshu Chauhan
+* Santosh Sugur
+* Keshav Sharma
+____
 ## Getting Started
 - Clone the repository to your local machine:
 
 Copy code
-- git clone https://github.com/yourusername/mamaearth-clone-html-css.git
+- git clone https://bagheladarsh007.github.io/MamaEarth-Clone/
 
 - Open the project directory in your favorite code editor.
 
