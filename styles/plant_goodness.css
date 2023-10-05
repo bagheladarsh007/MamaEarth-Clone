@@ -120,7 +120,7 @@ body{
     margin-top: 2vh;
     font-size: 5rem;
     font-weight: 900;
-    background-image: url("/assets/plant_assets/text-forest.avif");
+    background-image: url("../assets/plant_assets/text-forest.avif");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: none;
@@ -346,7 +346,7 @@ body{
 }
 /* Plantation partner section */
 .Plantation_partner{
-    background-image: url("/assets/plant_assets/bottom_forest.webp");
+    background-image: url("../assets/plant_assets/bottom_forest.webp");
     background-repeat: no-repeat;
     height: 85vh;
     display: flex;
@@ -360,7 +360,7 @@ body{
     margin-top: 8vh;
     font-size: 5rem;
     font-weight: 900;
-    background-image: url("/assets/plant_assets/text-forest.avif");
+    background-image: url("../assets/plant_assets/text-forest.avif");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: none;
